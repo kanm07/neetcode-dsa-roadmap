@@ -1,7 +1,14 @@
-// This method checks if the given array contains any duplicate elements.
-// It uses a HashSet to store unique numbers as it iterates through the array.
-// If a number is already present in the set, it returns true (duplicate found).
-// If no duplicates are found after the loop, it returns false.
+/*
+Approach:
+- Use a HashSet to track unique elements while iterating through the array.
+- For each number, check if it already exists in the set.
+- If it does, a duplicate is found — return true.
+- Otherwise, add it to the set.
+- If the loop completes without finding duplicates, return false.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {
